@@ -1,0 +1,111 @@
+td,
+th,
+h1,h3 {
+    text-align: center;
+}
+
+table, h1, h3{
+    cursor: default;
+}
+
+
+label{
+    text-align: right;
+}
+body{
+    font-size: 16px;
+/*    height: 10000px;*/
+}
+
+
+.eliminar,
+.actualizar {
+    padding: .25em;
+}
+
+.eliminar {
+    background-color: #d9534f;
+    border-radius: 8px;
+    color: white;
+}
+
+.eliminar:hover {
+    background-color: #d2322d;
+    border-color: #DEEA26;
+}
+
+.actualizar {
+    border-radius: 8px;
+    background-color: #66F1FF;
+    color: black;
+}
+
+.actualizar:hover {
+    background-color: #4EB7C1;
+}
+
+.tip{
+    position: relative;
+}
+
+.tip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    color: #fff;
+    content: attr(titl);
+    right: 5%;
+    padding: .35em 1em;
+    position: absolute;
+    z-index: 98;
+    top: -25px;
+}
+
+.tip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    border-bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+    top: 4px;
+}
+
+.admin{
+/*    display: none;*/
+}
+
+#cbAdmin {
+    height: 20px;
+    width: 20px;
+}
+
+
+#color{
+    width: 100%;
+    height: 32px;
+/*    background-color: black;*/
+    border: 1px solid gold;
+}
+#color{
+    background-color: black;
+}
+
+#manual{
+    position: absolute;
+    top: 55px;
+}
+
+#manual-cabecera{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#manual{
+    height: 100%;
+    left: 50px;
+}

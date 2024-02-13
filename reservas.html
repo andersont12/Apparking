@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="detalles_reserva">
+        <p><strong>Nombre del residente:</strong> <span id="nombre_residente"></span></p>
+        <p><strong>Hora de solicitud:</strong> <span id="hora_solicitud"></span></p>
+        <p><strong>Tiempo de reserva:</strong> <span id="tiempo_reserva"></span></p>
+        <p><strong>Hora de reserva:</strong> <span id="hora_reserva"></span></p>
+        <p><strong>Aprobado por el administrador:</strong> <span id="aprobado"></span></p>
+    </div>
+
+    <script><br/>        // Suponiendo que se obtiene la información de reserva de una fuente externa<br/>        var reserva = {<br/>            nombre_residente: "Juan Pérez",<br/>            hora_solicitud: "10:00 AM",<br/>            tiempo_reserva: "2 horas",<br/>            hora_reserva: "12:00 PM",<br/>            aprobado: true<br/>        };<br/><br/>        // Actualizar los elementos HTML con la información de la reserva<br/>        document.getElementById("nombre_residente").textContent = reserva.nombre_residente;<br/>        document.getElementById("hora_solicitud").textContent = reserva.hora_solicitud;<br/>        document.getElementById("tiempo_reserva").textContent = reserva.tiempo_reserva;<br/>        document.getElementById("hora_reserva").textContent = reserva.hora_reserva;<br/>        document.getElementById("aprobado").textContent = reserva.aprobado ? "Sí" : "No";<br/>    </script>
+</body>
+</html>

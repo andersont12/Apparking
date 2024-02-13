@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>registro</title>
+</head>
+<body>
+        <title>Registro de Visitantes</title>
+
+
+        <h1>Registro de Visitantes</h1>
+      
+        <form action="procesar_registro.php" method="POST">
+          <label for="identificacion">Número de Identificación del Visitante:</label>
+      
+          <input type="text" id="identificacion" name="identificacion" required="">
+      
+      
+      
+          <label for="apartamento">Apartamento a Visitar:</label>
+      
+          <input type="text" id="apartamento" name="apartamento" required="">
+      
+      
+      
+          <label for="torre">Torre a Visitar:</label>
+      
+          <input type="text" id="torre" name="torre" required="">
+      
+      
+          <label for="hora_reserva">Hora de Ingreso</label>
+          <input type="time" id="hora_reserva" name="hora_reserva" required="">
+
+          <label for="hora_reserva">Hora de salida</label>
+          <input type="time" id="hora_reserva" name="hora_reserva" required="">
+
+
+      
+          <label for="cedula">Número de Cédula del Responsable:</label>
+      
+          <input type="text" id="cedula" name="cedula" required="">
+      
+      
+      
+          <input type="submit" value="Registrar">
+        </form>
+
+</body>
+</html>

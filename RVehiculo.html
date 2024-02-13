@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Registro de Vehículo</title>
+
+
+    <h1>Registro de Vehículo</h1>
+  
+    <form action="procesar_registro.php" method="POST">
+      <label for="cedula">Número de Cédula del Propietario:</label>
+  
+  
+      <input type="text" id="cedula" name="cedula" required="">
+  
+  
+  
+  
+      <label for="nombre">Nombre del Propietario:</label>
+  
+  
+      <input type="text" id="nombre" name="nombre" required="">
+  
+  
+  
+  
+      <label for="apellido">Apellido del Propietario:</label>
+  
+  
+      <input type="text" id="apellido" name="apellido" required="">
+  
+  
+  
+  
+      <label for="telefono">Teléfono del Propietario:</label>
+  
+  
+      <input type="tel" id="telefono" name="telefono" required="">
+  
+  
+  
+  
+      <label for="correo">Correo del Propietario:</label>
+  
+  
+      <input type="email" id="correo" name="correo" required="">
+  
+  
+  
+  
+      <label for="placa">Placa del Vehículo:</label>
+  
+  
+      <input type="text" id="placa" name="placa" required="">
+  
+  
+  
+  
+      <label for="marca">Marca del Vehículo:</label>
+  
+  
+      <input type="text" id="marca" name="marca" required="">
+  
+  
+  
+  
+      <label for="tipo">Tipo de Vehículo:</label>
+  
+  
+      <input type="radio" id="carro" name="tipo" value="carro" checked="">
+      <label for="carro"><img src="ruta_a_imagen_carro.png" alt="Carro"></label>
+  
+  
+  
+      <input type="radio" id="moto" name="tipo" value="moto">
+      <label for="moto"><img src="ruta_a_imagen_moto.png" alt="Moto"></label>
+  
+  
+  
+  
+      <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>

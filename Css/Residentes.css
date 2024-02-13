@@ -1,0 +1,198 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+h2{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+    
+}
+.menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 2px;
+  height: 100%;
+  width: 300px;
+  color: #070505;
+  display: rgb(247, 247, 247)
+
+}
+
+body{
+  text-align: center;
+  background-repeat: no-repeat;
+  
+}
+
+div.IslasResi{
+  background-color: #444;
+  border-bottom: 50px;
+  border:darkblue solid;
+  width: 800px;
+  height: 150px;
+  right: 100%;
+  margin: 50px;
+  text-decoration: none;
+  
+}
+
+div.IslasResi:hover{
+  background-color: rgb(248, 141, 0);
+  transform: scale(1.2);
+  color: #fff;
+}
+
+
+div.IslasResi{
+  transition: transform 0.3s ease-in-out;
+  
+  transition: background-color 2s ease-in-out;
+  
+  
+}
+
+
+.VistasResidente{
+  border: solid blue;
+  display: flex;
+  width: 50%;
+}
+
+header#encabezado{
+  border: solid #070505;
+  width:50%;
+  background-color:silver;
+}
+
+p#Perfil{
+  border: solid rgb(2, 3, 5);
+    
+}
+
+
+#menu-toggle {
+  display: none;
+}
+  
+#menu-label {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:  2;
+}
+  
+  /* Estilo para el menú desplegable */
+#menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 250px;
+  height: 91%;
+  transition: left 0.3s ease;
+}
+  
+#menu ul {
+  padding: 0;
+  margin: 0;
+}
+  
+#menu li {
+  position: relative;
+}
+  
+#menu li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+  
+#menu ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #444;
+}
+
+div#icono {
+  border: solid rgb(10, 10, 15);
+}
+
+#menu li:hover > ul {
+  display: block;
+}
+
+li.listas :hover{
+  background-color: rgb(148, 146, 146);
+  transition: 1.3s;
+  
+}
+/* Mostrar el menú cuando el checkbox está marcado */
+#menu-toggle:checked + #menu-label + #menu {
+  left: 0;
+  bottom: 100px;
+}
+
+
+
+div.h2{
+  border: black;
+  text-align: left;
+    
+}
+img#Imgtitulo{
+  height: 80px;
+  width: 80px;
+  text-align: right;
+}
+
+a{
+  color: #070505;
+  text-decoration: none; 
+ 
+  
+}
+
+img#iconoUsiario{
+  height: 80px;
+  width: 80px; 
+}
+
+a.a1 :hover{
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+
+}
+
+
+
+
+
+
+
+
+
+

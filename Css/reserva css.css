@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    height: auto;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #24303c;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* Estilos para el encabezado */
+.header {
+    background-color: #007bff; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto en el centro */
+  }
+  
+  .header_logo img {
+    max-width: 200px; /* Ancho máximo para el logotipo */
+  }
+  
+  /* Estilos para la barra de navegación */
+  .navega {
+    background-color: #333; /* Color de fondo de la barra de navegación */
+  }
+  
+  .menu {
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Alineación del texto en el centro */
+  }
+  
+  .menu li {
+    display: inline;
+    margin: 0 20px; /* Espaciado entre elementos del menú */
+  }
+  
+  .menu li a {
+    text-decoration: none; /* Elimina la decoración de enlace */
+    color: #fff; /* Color del texto del enlace */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 18px; /* Tamaño de fuente */
+  }
+  
+  /* Estilos para el formulario de registro */
+  /* Estilos para el formulario de registro */
+.form-register {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-register h4 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .controls:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .botons {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botons:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo para el enlace "¿Ya tengo Cuenta?" */
+  .form-register p a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  /* Estilo para el mensaje de acuerdo con los Términos y Condiciones */
+  .form-register p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Estilo para el enlace dentro del mensaje de acuerdo */
+  .form-register p a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }

@@ -1,0 +1,202 @@
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.contenedor {
+    /*Es donde se encuentra el contenedor del logo de la empresa y el login*/
+    margin-top: 10%;
+    height: 60%;
+    width: 100%;
+    border-bottom: 3px solid rgb(40, 36, 36);
+    border-top: 3px solid rgb(40, 36, 36);
+    box-sizing: border-box;
+    float: left;
+    padding-top: 2%;
+    display: flex;
+}
+
+.logo { /*Aqui el logo */
+    float: left;
+    margin: 5%;
+    width: 30%;
+    border-right: 3px solid rgb(40, 36, 36);
+    box-sizing: border-box;
+    display: flex;
+}
+
+.registro { /*Donde se ubica el registro donde solicita correo y contraseña*/
+    float: left;
+    box-sizing: border-box;
+    margin: 10% auto ; 
+    width: 60%;
+}
+
+.BotonIni { /* Este es el estilo de los cuadros donde se ingresa "correo - contraseña" */
+    margin-bottom: 1%;
+    padding: 0.5%;
+    padding-left: 0.5%;
+    border: none;
+    border-bottom: solid 1px #000000;
+    text-align: center;
+    font-size: 12px;
+    background: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.login { /*Estilo del boton "Ingresar"*/
+    height: 30px;
+    background-color: rgb(73, 79, 77);
+    border: none;
+    margin-bottom: 16px;
+    font-size: 11px;
+    color: white;
+}
+footer{ /*Footer de la pagiina-(pide de pag)*/
+    background-color: black;
+    color: white;
+    height: 4%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 8%;
+}
+
+
+/* -------- Aqui inician los estilos de la pantalla de inicio de inicio 
+despues de ingresar con usuario y contraseña ---------*/
+
+.encabezado { /* Alinea el mensaje de "MENU SEGURIDAD"  y el boton de regresar a la pestaña de logueo*/
+    margin-top: 0.5%;
+    display: flex;
+}
+
+
+/*Aqui se documenta el menu desplegable*/
+.MenDesplegable { 
+    position: relative; /*Elemento estatico y su posicionamiento con medidas que es la siguiente linea*/
+    margin-left: 2px;
+}
+
+.MenDesplegable a { /*Estilo de los links*/
+    color: black;
+    text-decoration: none; 
+    box-sizing: border-box;
+}
+
+.MenDesplegable li:hover { 
+    padding-left: 8px; /* Al pasar el mouse por las opciones del menu encima hace el efecto de acercarse, */
+}
+
+.MenDesplegable .menu {
+    display: none; /*Este hace que el menu se oculte automaticamente*/
+    border-radius: 20px;
+    overflow: hidden; /*Hace que el contenido quede y no sobresalga del cuadro de texto */
+    background-color: rgb(237, 237, 237);
+    box-shadow: 2px 2px 5px rgb(50, 209, 195); /*es para la soombra del menu desplegable*/
+    position: absolute;
+    width: 345px; /*Anchura del cuadro que despliga el menu*/
+    height: 500px; /*Altura del cuadro que despliga el menu*/
+    
+}
+.MenDesplegable:hover .menu {
+    display: block; /*para que al pasar el click quede desplegado y no se quite automaticamente */
+}
+
+.InfoUsu { /*Aqui colocar eeso que ud hizo del usuario, esa bolita para ver quien esta en la secion*/
+    width: 270px;
+    height: 60px;
+    background-color: rgb(231, 53, 53);
+    margin: 15px;
+    border-radius: 100px;
+}
+
+li { /*Estilo para ajustar la separacion entre los li del submenu*/
+    margin-top: 30px;
+    list-style: none;
+}
+
+.MenSeg { /*Infomacion del tipo de secion que inicio "menu seguridad o admin */
+    margin-right: 50%;
+    margin-left: 50%;
+}
+
+
+/*----------Estilo barra busqueda-------------*/
+.search-container { /*Estilo del cajon*/
+    display: flex;
+    margin: 3% 0%;
+    align-items: center;
+}
+.search-box {
+    /* Estilo de la barra de  búsqueda */
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    margin-left: 15px;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    border: solid 1px #000000;
+}
+
+.search-button {
+    /* Estilo para el botón de búsqueda */
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.search-button:hover {
+    /* Cambiar el color del botón al pasar el ratón por encima */
+    background-color: #2980b9;
+}
+.caja1,
+.caja2,
+.caja3 { /*Estilos de los cajones del menu principal de inicio*/
+    height: 550px;
+    width: 330px;
+    border: 3px solid black;
+    float: left;
+    margin-left: 7%;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px cadetblue;
+    text-align: center;
+    padding: solid rgb(40, 36, 36);
+    box-sizing: border-box;
+    display: flex;
+}
+.caja1:hover,
+.caja2:hover,
+.caja3:hover {
+    transform: scale(1.1);
+}
+
+.BorInter { /*Boerde interno de donde van los cajones del inicio*/
+    border: 3px solid rgb(40, 36, 36);
+    width: 100%;
+    margin: 1%;
+    padding: 25%;
+    box-sizing: border-box;
+}
+
+.ImgMenu { /*Imagenes de los cajones de opciones del menu de inicio*/
+    margin-top: 150%;
+    width: 90%;
+    height: 34%;
+    box-sizing: border-box;
+    display: flex;
+}
+

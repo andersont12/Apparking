@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reservas</title>
+    <link rel="stylesheet" type="text/css" href="../../Css/estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="page-header">
+            <h1>Registro de Reservas</h1>
+        </header>
+    </div>
+    <form class="form-horizontal" ng-submit="guardarRegistro()">
+        <div class="form-group">
+            <label for="txtNombre" class="control-label col-xs-3">Nombre</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" id="txtNombre" 
+                       name="txtNombre" placeholder="Nombre" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="txtApellido" class="control-label col-xs-3">Apellidos</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" id="txtApellido"
+                       name="txtApellido" placeholder="Apellido" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="txtApellido" class="control-label col-xs-3">Numero documento de indentidad</label>
+            <div class="col-xs-9">
+                <input type="number" class="form-control" id="txtDocumento"
+                       name="txtDocumento" placeholder="N° documento" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="txtFechaNac" class="label-control col-xs-3">Fecha y lugar de Nacimiento</label>
+            <div class="col-xs-5">
+                <input type="date" class="form-control" id="txtFecha" name="txtFecha" date required>
+            </div>
+            <div class="col-xs-4">
+                <input type="text" class="form-control" placeholder="lugar" id="txtLugar" name="txtLugar">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="label-control col-xs-3">Direccion</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" placeholder="Direccion" id="txtDireccion" name="txtDireccion" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="" class="label-control col-xs-3">Numero de Telefono/Celular</label>
+            <div class="col-xs-9">
+                <input type="number" class="form-control" id="txtTelefono" name="txtTelefono" placeholder="Telefono/Celular" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="label-control col-xs-3">Direccion de correo electronico</label>
+            <div class="col-xs-9">
+                <input type="email" id="txtEmail" name="txtEmail"
+                       class="form-control" placeholder="Correo Electronico" required>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <header class="page-header">
+                <h3>Datos de Veiculo</h3>
+            </header>
+            <div class="form-group">
+                <label class="label-control col-xs-3">Color</label>
+                <div class="col-xs-6">
+                    <input type="password" name="txtColor" 
+                           id="txtColor" class="form-control" placeholder="color del vehiculo">
+                </div>
+                <div class="col-xs-3">
+                    <nav id="color"></nav>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="label-control col-xs-3">Placa</label>
+                <div class="col-xs-9">
+                    <input type="text" name="txtPlaca" id="txtPlaca" 
+                           class="form-control" placeholder="Placa del vehiculo" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="label-control col-xs-3">Marca</label>
+                <div class="col-xs-9">
+                    <input type="text" class="form-control" name="txtMarca"
+                            id="txtMarca" placeholder="Marca del Vehiculo">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <input class="btn btn-block btn-lg btn-primary" type="submit" value="Guardar">
+            <input type="reset" class="btn btn-block btn-lg btn-danger" value="Limpiar">
+        </div>
+    </form>
+</body>
+
+</html>
